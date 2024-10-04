@@ -1,4 +1,5 @@
-import "./TaskList.css"
+import PropTypes from "prop-types";
+import "./TaskList.css";
 
 function TaskList({ tasks, onMarkAsDone, onDelete }) {
     return (
@@ -14,12 +15,18 @@ function TaskList({ tasks, onMarkAsDone, onDelete }) {
                             {task.completed ? "Unmark" : "Mark as Done"}
                             {/* {task.completed ? (<i class="fa-solid fa-xmark"></i>) : (<i class="fa-solid fa-check"></i>)} */}
                         </button>
-                        <button onClick={() => onDelete(index)}><i class="fa-solid fa-trash"></i></button>
+                        <button onClick={() => onDelete(index)}><i className="fa-solid fa-trash"></i></button>
                     </div>
                 </div>
             ))}
         </div>
     );
 }
+
+TaskList.propTypes = {
+    tasks: PropTypes.array.isRequired,
+    onMarkAsDone: PropTypes.func.isRequired,
+    onDelete: PropTypes.func.isRequired,
+};
 
 export default TaskList;

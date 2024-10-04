@@ -1,4 +1,5 @@
 import { useState } from "react";
+import PropTypes from "prop-types";
 import "./TaskForm.css";
 
 function TaskForm({ onSubmit }) {
@@ -54,5 +55,10 @@ function TaskForm({ onSubmit }) {
         </div>
     );
 }
+
+// Add prop validation
+TaskForm.propTypes = {
+    onSubmit: PropTypes.func.isRequired,
+};
 
 export default TaskForm;

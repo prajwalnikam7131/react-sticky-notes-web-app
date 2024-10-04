@@ -1,4 +1,3 @@
-import React from "react";
 import './App.css';
 import StickyNote from "./components/StickyNote";
 import Nav from "./components/Nav";
