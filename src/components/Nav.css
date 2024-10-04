@@ -1,0 +1,13 @@
+.nav {
+    background-color: #FADFA1;
+    text-align: center;
+    /* border-bottom: 2px solid black; */
+    /* margin-bottom: 5px; */
+    height: 7vh;
+}
+
+.nav h1 {
+    font-size: 32px;
+    padding: 0.5rem 0;
+    color: #000000;
+}

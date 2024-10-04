@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: sans-serif;
+    height: 100vh;
+}
+
+.sticky-Notes-main {
+    height: 93vh;
+    display: flex;
+}
+
+.sticky-notes-main {
+    background-color: #F5F7F8;
+}
+
+.sticky-notes-form {
+    background-color: cadetblue;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.sticky-notes-task-item {
+    /* background-color: #e29e6d; */
+    border-left: 2px solid #000;
+    width: 70%;
+    /* min-height: 90vh; */
+}
+
+
+
+/* Phone */
+@media only screen and (max-width: 600px) {
+
+    .sticky-Notes-main {
+        background-color: #F5F7F8;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sticky-notes-form {
+        width: 100%;
+    }
+
+    .sticky-notes-task-item {
+        width: 100%;
+        border-left: none;
+    }
+
+}
+
+
+/* large monitor */
+@media only screen and (min-width: 1200px) {
+
+
+}
