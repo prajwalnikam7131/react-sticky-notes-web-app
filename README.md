@@ -1,5 +1,8 @@
-
 # Mini Sticky Notes Web App
+
+## Live Demo
+
+You can view the live version of the project [here](https://prajwalnikam7131.github.io/react-sticky-notes-web-app/)
 
 # Overview :
 > This is a simple web application that allows users to create, manage, and organize sticky notes. Users can write a title and description for each note, mark notes as done, unmark them, and delete notes as needed.
